@@ -15,7 +15,7 @@
 3. **Get All REM Values Not in Variables and Formulas**
 
    - **Description**: Identify and adjust standalone REM values that are not part of variables or formulas.
-   - **Regex Pattern**: `([0-9.]+)rem(?![])])`
+   - **Regex Pattern**: `([0-9.]+)rem(?![\]\)_])`
    - **Replacement**: Transform the pattern to `calc($1 * var(--rem-basis,1rem))`
 
 4. **Get All Values in Brackets - Most in @apply Rules**
