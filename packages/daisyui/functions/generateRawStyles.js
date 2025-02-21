@@ -25,7 +25,26 @@ export function escapeBreakpointColon(css, breakpoint) {
 
 // wrap styles in layer
 export function wrapInLayer(styles, layer) {
-  return layer ? `@layer ${layer} {\n${styles}\n}` : styles
+  let stylesContent = styles
+  if (layer) {
+    let prefix = `@layer ${layer}`
+    let keyframesStyles = ""
+
+    if (layer.indexOf(".") === 0) {
+      prefix = layer
+      // Extract keyframes if layer is a class name
+      const root = postcss.parse(stylesContent)
+      root.walkAtRules("keyframes", (atRule) => {
+        keyframesStyles += atRule.toString() + "\n"
+        atRule.remove()
+      })
+      stylesContent = root.toString()
+    }
+
+    stylesContent = `${prefix} {\n${stylesContent}\n}` + keyframesStyles
+  }
+
+  return stylesContent
 }
 
 // generate media query
@@ -85,10 +104,7 @@ async function processFile(
   }
 
   stylesContent = cleanCss(stylesContent)
-
-  if (layer) {
-    stylesContent = `@layer ${layer} {\n${stylesContent}\n}`
-  }
+  stylesContent = wrapInLayer(stylesContent, layer)
 
   await fs.writeFile(
     path.join(import.meta.dirname, distDir, `${distDir}/${file}.css`),

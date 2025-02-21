@@ -44,7 +44,7 @@ async function generateFiles() {
           "swap",
           "validator",
         ],
-        layer: "utilities",
+        layer: ".sn-sp-page",
       }),
     !isDev &&
       generateRawStyles({
