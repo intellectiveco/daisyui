@@ -24,7 +24,7 @@
     @apply bg-base-100 border-current;
 
     &:before {
-      @apply print:[outline:calc(.25 * var(--rem-basis,1rem))_solid] bg-current print:[outline-offset:-1rem];
+      @apply bg-current print:[outline:.25rem_solid] print:[outline-offset:-1rem];
       box-shadow:
         0 -1px oklch(0% 0 0 / calc(var(--depth) * 0.1)) inset,
         0 8px 0 -4px oklch(100% 0 0 / calc(var(--depth) * 0.1)) inset,

@@ -56,7 +56,7 @@
     }
   }
   &:before {
-    @apply rounded-selector print:[outline:calc(.25 * var(--rem-basis,1rem))_solid] relative start-0 col-start-2 row-start-1 aspect-square h-full bg-current print:[outline-offset:-1rem];
+    @apply rounded-selector relative start-0 col-start-2 row-start-1 aspect-square h-full bg-current print:[outline:.25rem_solid] print:[outline-offset:-1rem];
     translate: 0;
     --tw-content: "";
     content: var(--tw-content);
