@@ -24,7 +24,7 @@
     @apply bg-base-100 border-current;
 
     &:before {
-      @apply bg-current print:[outline:.25rem_solid] print:[outline-offset:-1rem];
+      @apply print:[outline:calc(.25 * var(--rem-basis,1rem))_solid] bg-current print:[outline-offset:-1rem];
       box-shadow:
         0 -1px oklch(0% 0 0 / calc(var(--depth) * 0.1)) inset,
         0 8px 0 -4px oklch(100% 0 0 / calc(var(--depth) * 0.1)) inset,
@@ -73,35 +73,35 @@
 }
 
 .radio-xs {
-  padding: 0.125rem;
+  padding: calc(0.125 * var(--rem-basis, 1rem));
   &:is([type="radio"]) {
     --size: calc(var(--size-selector, 0.25rem) * 4);
   }
 }
 
 .radio-sm {
-  padding: 0.1875rem;
+  padding: calc(0.1875 * var(--rem-basis, 1rem));
   &:is([type="radio"]) {
     --size: calc(var(--size-selector, 0.25rem) * 5);
   }
 }
 
 .radio-md {
-  padding: 0.25rem;
+  padding: calc(0.25 * var(--rem-basis, 1rem));
   &:is([type="radio"]) {
     --size: calc(var(--size-selector, 0.25rem) * 6);
   }
 }
 
 .radio-lg {
-  padding: 0.3125rem;
+  padding: calc(0.3125 * var(--rem-basis, 1rem));
   &:is([type="radio"]) {
     --size: calc(var(--size-selector, 0.25rem) * 7);
   }
 }
 
 .radio-xl {
-  padding: 0.375rem;
+  padding: calc(0.375 * var(--rem-basis, 1rem));
   &:is([type="radio"]) {
     --size: calc(var(--size-selector, 0.25rem) * 8);
   }

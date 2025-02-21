@@ -1,7 +1,7 @@
 .navbar {
   @apply flex w-full items-center;
-  padding: 0.5rem;
-  min-height: 4rem;
+  padding: calc(0.5 * var(--rem-basis, 1rem));
+  min-height: calc(4 * var(--rem-basis, 1rem));
 }
 
 .navbar-start {

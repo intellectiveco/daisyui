@@ -61,7 +61,7 @@
 
 .swap-flip {
   transform-style: preserve-3d;
-  perspective: 20rem;
+  perspective: calc(20 * var(--rem-basis, 1rem));
 
   .swap-on,
   .swap-indeterminate,

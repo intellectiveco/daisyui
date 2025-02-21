@@ -1,6 +1,6 @@
 .divider {
   @apply flex h-4 flex-row items-center self-stretch whitespace-nowrap;
-  margin: var(--divider-m, 1rem 0);
+  margin: var(--divider-m, calc(1 * var(--rem-basis, 1rem)) 0);
 
   &:before,
   &:after {
@@ -20,7 +20,7 @@
 }
 
 .divider-horizontal {
-  --divider-m: 0 1rem;
+  --divider-m: 0 calc(1 * var(--rem-basis, 1rem));
   &.divider {
     @apply h-auto w-4 flex-col;
 
@@ -35,7 +35,7 @@
 }
 
 .divider-vertical {
-  --divider-m: 1rem 0;
+  --divider-m: calc(1 * var(--rem-basis, 1rem)) 0;
   &.divider {
     @apply h-4 w-auto flex-row;
 

@@ -2,7 +2,7 @@
   @apply flex w-fit flex-col flex-wrap p-2;
   --menu-active-fg: var(--color-neutral-content);
   --menu-active-bg: var(--color-neutral);
-  font-size: 0.875rem;
+  font-size: calc(0.875 * var(--int-font-base, 1rem));
 
   :where(li ul) {
     @apply relative ms-4 ps-2 whitespace-nowrap;
@@ -42,8 +42,8 @@
     &:after {
       @apply justify-self-end;
       display: block;
-      height: 0.375rem;
-      width: 0.375rem;
+      height: calc(0.375 * var(--rem-basis, 1rem));
+      width: calc(0.375 * var(--rem-basis, 1rem));
       rotate: -135deg;
       translate: 0 -1px;
       transition-property: rotate, translate;
@@ -85,7 +85,7 @@
 
   :where(li:empty) {
     @apply bg-base-content opacity-10;
-    margin: 0.5rem 1rem;
+    margin: calc(0.5 * var(--rem-basis, 1rem)) calc(1 * var(--rem-basis, 1rem));
     height: 1px;
   }
 
@@ -117,7 +117,7 @@
 
 .menu-title {
   @apply text-base-content/40 px-3 py-2;
-  font-size: 0.875rem;
+  font-size: calc(0.875 * var(--int-font-base, 1rem));
   font-weight: 600;
 }
 
@@ -154,7 +154,7 @@
   :where(li:not(.menu-title) > *:not(ul, details, .menu-title)),
   :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
     @apply rounded-field px-2 py-1;
-    font-size: 0.6875rem;
+    font-size: calc(0.6875 * var(--int-font-base, 1rem));
   }
 
   .menu-title {
@@ -166,7 +166,7 @@
   :where(li:not(.menu-title) > *:not(ul, details, .menu-title)),
   :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
     @apply rounded-field px-2.5 py-1;
-    font-size: 0.75rem;
+    font-size: calc(0.75 * var(--int-font-base, 1rem));
   }
 
   .menu-title {
@@ -178,7 +178,7 @@
   :where(li:not(.menu-title) > *:not(ul, details, .menu-title)),
   :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
     @apply rounded-field px-3 py-1.5;
-    font-size: 0.875rem;
+    font-size: calc(0.875 * var(--int-font-base, 1rem));
   }
 
   .menu-title {
@@ -190,7 +190,7 @@
   :where(li:not(.menu-title) > *:not(ul, details, .menu-title)),
   :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
     @apply rounded-field px-4 py-1.5;
-    font-size: 1.125rem;
+    font-size: calc(1.125 * var(--int-font-base, 1rem));
   }
 
   .menu-title {
@@ -202,7 +202,7 @@
   :where(li:not(.menu-title) > *:not(ul, details, .menu-title)),
   :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
     @apply rounded-field px-5 py-1.5;
-    font-size: 1.375rem;
+    font-size: calc(1.375 * var(--int-font-base, 1rem));
   }
 
   .menu-title {

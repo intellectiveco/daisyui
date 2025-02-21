@@ -7,8 +7,8 @@
   grid-template-columns: auto minmax(auto, 1fr);
   text-align: start;
   border: var(--border) solid var(--color-base-200);
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  line-height: calc(1.25 * var(--int-font-base, 1rem));
   background-size: auto, calc(var(--noise) * 100%);
   background-image: none, var(--fx-noise);
   box-shadow:

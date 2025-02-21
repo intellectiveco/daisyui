@@ -54,7 +54,7 @@
 .timeline-box {
   border: var(--border) solid;
   @apply rounded-box bg-base-100 border-base-300 px-4 py-2;
-  font-size: 0.75rem;
+  font-size: calc(0.75 * var(--int-font-base, 1rem));
   box-shadow: 0 1px 2px 0 oklch(0% 0 0/0.05);
 }
 
@@ -102,7 +102,7 @@
 
 .timeline-snap-icon {
   > li {
-    --timeline-col-start: 0.5rem;
+    --timeline-col-start: calc(0.5 * var(--rem-basis, 1rem));
     --timeline-row-start: minmax(0, 1fr);
   }
 }
@@ -167,7 +167,7 @@
   &.timeline-snap-icon {
     > li {
       --timeline-col-start: minmax(0, 1fr);
-      --timeline-row-start: 0.5rem;
+      --timeline-row-start: calc(0.5 * var(--rem-basis, 1rem));
     }
   }
 }

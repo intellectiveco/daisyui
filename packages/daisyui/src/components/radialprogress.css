@@ -3,7 +3,7 @@
   vertical-align: middle;
   box-sizing: content-box;
   --value: 0;
-  --size: 5rem;
+  --size: calc(5 * var(--rem-basis, 1rem));
   --thickness: calc(var(--size) / 10);
   --radialprogress: calc(var(--value) * 1%);
   transition: --radialprogress 0.3s linear;

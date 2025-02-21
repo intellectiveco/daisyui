@@ -21,7 +21,7 @@
     color 0.3s,
     grid-template-columns 0.2s;
   --input-color: color-mix(in oklab, var(--color-base-content) 50%, #0000);
-  --toggle-p: 0.1875rem;
+  --toggle-p: calc(0.1875 * var(--rem-basis, 1rem));
   --size: calc(var(--size-selector, 0.25rem) * 6);
   width: calc((var(--size) * 2) - (var(--border) + var(--toggle-p)) * 2);
   height: var(--size);
@@ -56,7 +56,7 @@
     }
   }
   &:before {
-    @apply rounded-selector relative start-0 col-start-2 row-start-1 aspect-square h-full bg-current print:[outline:.25rem_solid] print:[outline-offset:-1rem];
+    @apply rounded-selector print:[outline:calc(.25 * var(--rem-basis,1rem))_solid] relative start-0 col-start-2 row-start-1 aspect-square h-full bg-current print:[outline-offset:-1rem];
     translate: 0;
     --tw-content: "";
     content: var(--tw-content);
@@ -172,7 +172,7 @@
 .toggle-xs {
   &:is([type="checkbox"]),
   &:has([type="checkbox"]) {
-    --toggle-p: 0.0625rem;
+    --toggle-p: calc(0.0625 * var(--rem-basis, 1rem));
     --size: calc(var(--size-selector, 0.25rem) * 4);
   }
 }
@@ -180,7 +180,7 @@
 .toggle-sm {
   &:is([type="checkbox"]),
   &:has([type="checkbox"]) {
-    --toggle-p: 0.125rem;
+    --toggle-p: calc(0.125 * var(--rem-basis, 1rem));
     --size: calc(var(--size-selector, 0.25rem) * 5);
   }
 }
@@ -188,7 +188,7 @@
 .toggle-md {
   &:is([type="checkbox"]),
   &:has([type="checkbox"]) {
-    --toggle-p: 0.1875rem;
+    --toggle-p: calc(0.1875 * var(--rem-basis, 1rem));
     --size: calc(var(--size-selector, 0.25rem) * 6);
   }
 }
@@ -196,7 +196,7 @@
 .toggle-lg {
   &:is([type="checkbox"]),
   &:has([type="checkbox"]) {
-    --toggle-p: 0.25rem;
+    --toggle-p: calc(0.25 * var(--rem-basis, 1rem));
     --size: calc(var(--size-selector, 0.25rem) * 7);
   }
 }
@@ -204,7 +204,7 @@
 .toggle-xl {
   &:is([type="checkbox"]),
   &:has([type="checkbox"]) {
-    --toggle-p: 0.3125rem;
+    --toggle-p: calc(0.3125 * var(--rem-basis, 1rem));
     --size: calc(var(--size-selector, 0.25rem) * 8);
   }
 }

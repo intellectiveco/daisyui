@@ -56,23 +56,23 @@
     }
   }
   &:has(.input-xs) span {
-    font-size: 0.6875rem;
+    font-size: calc(0.6875 * var(--int-font-base, 1rem));
     top: calc(var(--size-field, 0.25rem) * 6 / 2);
   }
   &:has(.input-sm) span {
-    font-size: 0.75rem;
+    font-size: calc(0.75 * var(--int-font-base, 1rem));
     top: calc(var(--size-field, 0.25rem) * 8 / 2);
   }
   &:has(.input-md) span {
-    font-size: 0.875rem;
+    font-size: calc(0.875 * var(--int-font-base, 1rem));
     top: calc(var(--size-field, 0.25rem) * 10 / 2);
   }
   &:has(.input-lg) span {
-    font-size: 1.125rem;
+    font-size: calc(1.125 * var(--int-font-base, 1rem));
     top: calc(var(--size-field, 0.25rem) * 12 / 2);
   }
   &:has(.input-xl) span {
-    font-size: 1.375rem;
+    font-size: calc(1.375 * var(--int-font-base, 1rem));
     top: calc(var(--size-field, 0.25rem) * 14 / 2);
   }
 }

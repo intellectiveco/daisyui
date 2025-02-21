@@ -41,7 +41,7 @@
   transform: scaleY(3);
   cursor: ew-resize;
   transform-origin: 100% 100%;
-  translate: 0.35rem 0.35rem;
+  translate: calc(0.35 * var(--rem-basis, 1rem)) calc(0.35 * var(--rem-basis, 1rem));
   clip-path: inset(calc(100% - 0.75rem) 0 0 calc(100% - 0.75rem));
   /* @supports (-webkit-touch-callout: none) { */
   transition:

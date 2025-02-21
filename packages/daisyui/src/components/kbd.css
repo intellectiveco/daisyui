@@ -6,32 +6,32 @@
   border-bottom: calc(var(--border) + 1px) solid
     color-mix(in srgb, var(--color-base-content) 20%, #0000);
   --size: calc(var(--size-selector, 0.25rem) * 6);
-  font-size: 0.875rem;
+  font-size: calc(0.875 * var(--int-font-base, 1rem));
   height: var(--size);
   min-width: var(--size);
 }
 
 .kbd-xs {
   --size: calc(var(--size-selector, 0.25rem) * 4);
-  font-size: 0.625rem;
+  font-size: calc(0.625 * var(--int-font-base, 1rem));
 }
 
 .kbd-sm {
   --size: calc(var(--size-selector, 0.25rem) * 5);
-  font-size: 0.75rem;
+  font-size: calc(0.75 * var(--int-font-base, 1rem));
 }
 
 .kbd-md {
   --size: calc(var(--size-selector, 0.25rem) * 6);
-  font-size: 0.875rem;
+  font-size: calc(0.875 * var(--int-font-base, 1rem));
 }
 
 .kbd-lg {
   --size: calc(var(--size-selector, 0.25rem) * 7);
-  font-size: 1rem;
+  font-size: calc(1 * var(--int-font-base, 1rem));
 }
 
 .kbd-xl {
   --size: calc(var(--size-selector, 0.25rem) * 8);
-  font-size: 1.125rem;
+  font-size: calc(1.125 * var(--int-font-base, 1rem));
 }

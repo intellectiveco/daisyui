@@ -7,7 +7,7 @@
     @apply grid grid-cols-1 grid-rows-2 place-items-center text-center;
     grid-template-rows: 40px 1fr;
     grid-template-columns: auto;
-    min-width: 4rem;
+    min-width: calc(4 * var(--rem-basis, 1rem));
     --step-bg: var(--color-base-300);
     --step-fg: var(--color-base-content);
     &:before {
@@ -120,7 +120,7 @@
     @apply grid grid-cols-1 grid-rows-2 place-items-center text-center;
     grid-template-rows: 40px 1fr;
     grid-template-columns: auto;
-    min-width: 4rem;
+    min-width: calc(4 * var(--rem-basis, 1rem));
 
     &:before {
       @apply h-2 w-full;
@@ -140,10 +140,10 @@
 
   .step {
     @apply grid grid-cols-2 grid-rows-1;
-    gap: 0.5rem;
+    gap: calc(0.5 * var(--rem-basis, 1rem));
     grid-template-columns: 40px 1fr;
     grid-template-rows: auto;
-    min-height: 4rem;
+    min-height: calc(4 * var(--rem-basis, 1rem));
     justify-items: start;
 
     &:before {

@@ -7,7 +7,7 @@
   > :where(.tooltip-content),
   &[data-tip]:before {
     @apply text-neutral-content rounded-field absolute max-w-[20rem] px-2 py-1 text-center whitespace-normal opacity-0;
-    font-size: 0.875rem;
+    font-size: calc(0.875 * var(--int-font-base, 1rem));
     line-height: 1.25em;
     transition:
       opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 75ms,
@@ -28,8 +28,8 @@
       transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) 75ms;
     content: "";
     pointer-events: none;
-    width: 0.625rem;
-    height: 0.25rem;
+    width: calc(0.625 * var(--rem-basis, 1rem));
+    height: calc(0.25 * var(--rem-basis, 1rem));
     display: block;
     position: absolute;
     mask-repeat: no-repeat;
@@ -80,7 +80,7 @@
     &[data-tip]:before,
     &:after {
       @apply opacity-100;
-      --tt-pos: 0rem;
+      --tt-pos: calc(0 * var(--rem-basis, 1rem));
       transition:
         opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s,
         transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0ms;

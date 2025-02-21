@@ -1,6 +1,6 @@
 .mockup-code {
   @apply bg-neutral text-neutral-content rounded-box relative overflow-hidden overflow-x-auto py-5;
-  font-size: 0.875rem;
+  font-size: calc(0.875 * var(--int-font-base, 1rem));
   direction: ltr;
 
   &:before {
@@ -76,7 +76,7 @@
 
     .input {
       @apply bg-base-200 mx-auto flex h-full items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap;
-      font-size: 0.75rem;
+      font-size: calc(0.75 * var(--int-font-base, 1rem));
       direction: ltr;
 
       &:before {

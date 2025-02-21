@@ -5,8 +5,8 @@
 .chat-bubble {
   @apply rounded-field bg-base-300 text-base-content relative block w-fit px-4 py-2;
   grid-row-end: 3;
-  min-height: 2rem;
-  min-width: 2.5rem;
+  min-height: calc(2 * var(--rem-basis, 1rem));
+  min-width: calc(2.5 * var(--rem-basis, 1rem));
   max-width: 90%;
 
   &:before {
@@ -59,12 +59,12 @@
 
 .chat-header {
   @apply row-start-1 flex gap-1;
-  font-size: 0.6875rem;
+  font-size: calc(0.6875 * var(--int-font-base, 1rem));
 }
 
 .chat-footer {
   @apply row-start-3 flex gap-1;
-  font-size: 0.6875rem;
+  font-size: calc(0.6875 * var(--int-font-base, 1rem));
 }
 
 .chat-start {
@@ -88,7 +88,7 @@
 
     &:before {
       transform: rotateY(0deg);
-      inset-inline-start: -0.75rem;
+      inset-inline-start: -calc(0.75 * var(--rem-basis, 1rem));
     }
     [dir="rtl"] &:before {
       transform: rotateY(180deg);

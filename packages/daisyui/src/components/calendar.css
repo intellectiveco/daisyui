@@ -1,8 +1,8 @@
 .cally {
-  font-size: 0.7rem;
+  font-size: calc(0.7 * var(--int-font-base, 1rem));
 
   &::part(container) {
-    padding: 0.5rem 1rem;
+    padding: calc(0.5 * var(--rem-basis, 1rem)) calc(1 * var(--rem-basis, 1rem));
     user-select: none;
   }
   ::part(th) {
@@ -14,12 +14,12 @@
   }
   ::part(head) {
     opacity: 0.5;
-    font-size: 0.7rem;
+    font-size: calc(0.7 * var(--int-font-base, 1rem));
   }
   &::part(button) {
     border-radius: var(--radius-field);
     border: none;
-    padding: 0.5rem;
+    padding: calc(0.5 * var(--rem-basis, 1rem));
     background: #0000;
   }
   &::part(button):hover {
@@ -27,7 +27,7 @@
   }
   ::part(day) {
     border-radius: var(--radius-field);
-    font-size: 0.7rem;
+    font-size: calc(0.7 * var(--int-font-base, 1rem));
   }
   ::part(button day today) {
     background: var(--color-primary);
@@ -62,7 +62,7 @@
   background-color: var(--color-base-100);
   border-radius: var(--radius-box);
   border: var(--border) solid var(--color-base-200);
-  font-size: 0.75rem;
+  font-size: calc(0.75 * var(--int-font-base, 1rem));
   display: inline-block;
   position: relative;
   overflow: clip;
@@ -78,16 +78,16 @@
     box-sizing: border-box;
   }
   .rdp-day {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: calc(2.25 * var(--rem-basis, 1rem));
+    height: calc(2.25 * var(--rem-basis, 1rem));
     text-align: center;
   }
   .rdp-day_button {
     cursor: pointer;
     font: inherit;
     color: inherit;
-    width: 2.25rem;
-    height: 2.25rem;
+    width: calc(2.25 * var(--rem-basis, 1rem));
+    height: calc(2.25 * var(--rem-basis, 1rem));
     border: 2px solid #0000;
     border-radius: var(--radius-field);
     background: 0 0;
@@ -129,8 +129,8 @@
     font: inherit;
     color: inherit;
     appearance: none;
-    width: 2.25rem;
-    height: 2.25rem;
+    width: calc(2.25 * var(--rem-basis, 1rem));
+    height: calc(2.25 * var(--rem-basis, 1rem));
     background: 0 0;
     border: none;
     justify-content: center;
@@ -146,13 +146,13 @@
   }
   .rdp-chevron {
     fill: var(--color-base-content);
-    width: 1rem;
-    height: 1rem;
+    width: calc(1 * var(--rem-basis, 1rem));
+    height: calc(1 * var(--rem-basis, 1rem));
     display: inline-block;
   }
   .rdp-dropdowns {
     align-items: center;
-    gap: 0.5rem;
+    gap: calc(0.5 * var(--rem-basis, 1rem));
     display: inline-flex;
     position: relative;
   }
@@ -187,17 +187,17 @@
     }
   }
   .rdp-month_caption {
-    height: 2.75rem;
-    font-size: 0.75rem;
+    height: calc(2.75 * var(--rem-basis, 1rem));
+    font-size: calc(0.75 * var(--int-font-base, 1rem));
     font-weight: inherit;
     place-content: center;
     display: flex;
   }
   .rdp-months {
-    gap: 2rem;
+    gap: calc(2 * var(--rem-basis, 1rem));
     flex-wrap: wrap;
     max-width: fit-content;
-    padding: 0.5rem;
+    padding: calc(0.5 * var(--rem-basis, 1rem));
     display: flex;
     position: relative;
   }
@@ -205,28 +205,28 @@
     border-collapse: collapse;
   }
   .rdp-nav {
-    height: 2.75rem;
+    height: calc(2.75 * var(--rem-basis, 1rem));
     inset-block-start: 0;
     inset-inline-end: 0;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-inline: 0.5rem;
+    padding-inline: calc(0.5 * var(--rem-basis, 1rem));
     display: flex;
     position: absolute;
-    top: 0.25rem;
+    top: calc(0.25 * var(--rem-basis, 1rem));
   }
   .rdp-weekday {
     opacity: 0.6;
-    padding: 0.5rem 0rem;
+    padding: calc(0.5 * var(--rem-basis, 1rem)) calc(0 * var(--rem-basis, 1rem));
     text-align: center;
     font-size: smaller;
     font-weight: 500;
   }
   .rdp-week_number {
     opacity: 0.6;
-    height: 2.25rem;
-    width: 2.25rem;
+    height: calc(2.25 * var(--rem-basis, 1rem));
+    width: calc(2.25 * var(--rem-basis, 1rem));
     border: none;
     border-radius: 100%;
     text-align: center;
@@ -241,7 +241,7 @@
   }
   .rdp-selected {
     font-weight: inherit;
-    font-size: 0.75rem;
+    font-size: calc(0.75 * var(--int-font-base, 1rem));
     .rdp-day_button {
       color: var(--color-base-100);
       background-color: var(--color-base-content);
@@ -297,14 +297,14 @@
   }
   .rdp-footer {
     border-top: var(--border) solid var(--color-base-200);
-    padding: 0.5rem;
+    padding: calc(0.5 * var(--rem-basis, 1rem));
   }
 }
 
 .pika-single {
   &:is(div) {
     user-select: none;
-    font-size: 0.75rem;
+    font-size: calc(0.75 * var(--int-font-base, 1rem));
     z-index: 999;
     display: inline-block;
     position: relative;
@@ -312,7 +312,7 @@
     background-color: var(--color-base-100);
     border-radius: var(--radius-box);
     border: var(--border) solid var(--color-base-200);
-    padding: 0.5rem;
+    padding: calc(0.5 * var(--rem-basis, 1rem));
     &:before,
     &:after {
       content: "";
@@ -368,8 +368,8 @@
       top: 0;
       outline: none;
       border: 0;
-      width: 2.25rem;
-      height: 2.25rem;
+      width: calc(2.25 * var(--rem-basis, 1rem));
+      height: calc(2.25 * var(--rem-basis, 1rem));
       color: #0000;
       font-size: 1.2em;
       border-radius: var(--radius-field);
@@ -382,8 +382,8 @@
       }
       &:before {
         display: inline-block;
-        width: 2.25rem;
-        height: 2.25rem;
+        width: calc(2.25 * var(--rem-basis, 1rem));
+        height: calc(2.25 * var(--rem-basis, 1rem));
         line-height: 2.25;
         color: var(--color-base-content);
       }
@@ -420,8 +420,8 @@
       th {
         opacity: 0.6;
         text-align: center;
-        width: 2.25rem;
-        height: 2.25rem;
+        width: calc(2.25 * var(--rem-basis, 1rem));
+        height: calc(2.25 * var(--rem-basis, 1rem));
       }
     }
 
@@ -431,8 +431,8 @@
       outline: none;
       border: 0;
       margin: 0;
-      width: 2.25rem;
-      height: 2.25rem;
+      width: calc(2.25 * var(--rem-basis, 1rem));
+      height: calc(2.25 * var(--rem-basis, 1rem));
       padding: 5px;
       text-align: right;
       text-align: center;

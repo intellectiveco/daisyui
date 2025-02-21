@@ -1,6 +1,6 @@
 .fieldset {
   @apply grid gap-1.5 py-1;
-  font-size: 0.75rem;
+  font-size: calc(0.75 * var(--int-font-base, 1rem));
   grid-template-columns: 1fr;
   grid-auto-rows: max-content;
 }
