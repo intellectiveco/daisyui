@@ -3,7 +3,7 @@
   @apply bg-base-100 relative inline-flex shrink appearance-none items-center gap-1.5 ps-4 pe-7 align-middle;
   width: clamp(calc(3 * var(--rem-basis, 1rem)), calc(20 * var(--rem-basis, 1rem)), 100%);
   height: var(--size);
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
   border-start-start-radius: var(--join-ss, var(--radius-field));
   border-start-end-radius: var(--join-se, var(--radius-field));
   border-end-start-radius: var(--join-es, var(--radius-field));
@@ -138,25 +138,25 @@
 
 .select-xs {
   --size: calc(var(--size-field, 0.25rem) * 6);
-  font-size: calc(0.6875 * var(--int-font-base, 1rem));
+  font-size: calc(0.6875 * var(--font-size-basis, 1rem));
 }
 
 .select-sm {
   --size: calc(var(--size-field, 0.25rem) * 8);
-  font-size: calc(0.75 * var(--int-font-base, 1rem));
+  font-size: calc(0.75 * var(--font-size-basis, 1rem));
 }
 
 .select-md {
   --size: calc(var(--size-field, 0.25rem) * 10);
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
 }
 
 .select-lg {
   --size: calc(var(--size-field, 0.25rem) * 12);
-  font-size: calc(1.125 * var(--int-font-base, 1rem));
+  font-size: calc(1.125 * var(--font-size-basis, 1rem));
 }
 
 .select-xl {
   --size: calc(var(--size-field, 0.25rem) * 14);
-  font-size: calc(1.375 * var(--int-font-base, 1rem));
+  font-size: calc(1.375 * var(--font-size-basis, 1rem));
 }

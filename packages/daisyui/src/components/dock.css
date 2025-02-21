@@ -29,7 +29,7 @@
     }
 
     .dock-label {
-      font-size: calc(0.6875 * var(--int-font-base, 1rem));
+      font-size: calc(0.6875 * var(--font-size-basis, 1rem));
     }
   }
 }
@@ -45,7 +45,7 @@
   }
 
   .dock-label {
-    font-size: calc(0.625 * var(--int-font-base, 1rem));
+    font-size: calc(0.625 * var(--font-size-basis, 1rem));
   }
 }
 
@@ -61,7 +61,7 @@
   }
 
   .dock-label {
-    font-size: calc(0.625 * var(--int-font-base, 1rem));
+    font-size: calc(0.625 * var(--font-size-basis, 1rem));
   }
 }
 
@@ -69,7 +69,7 @@
   height: calc(4 * var(--rem-basis, 1rem));
   height: calc((4 * var(--rem-basis, 1rem)) + env(safe-area-inset-bottom));
   .dock-label {
-    font-size: calc(0.6875 * var(--int-font-base, 1rem));
+    font-size: calc(0.6875 * var(--font-size-basis, 1rem));
   }
 }
 
@@ -84,7 +84,7 @@
   }
 
   .dock-label {
-    font-size: calc(0.625 * var(--int-font-base, 1rem));
+    font-size: calc(0.625 * var(--font-size-basis, 1rem));
   }
 }
 
@@ -99,6 +99,6 @@
   }
 
   .dock-label {
-    font-size: calc(0.75 * var(--int-font-base, 1rem));
+    font-size: calc(0.75 * var(--font-size-basis, 1rem));
   }
 }

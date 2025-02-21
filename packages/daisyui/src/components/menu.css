@@ -2,7 +2,7 @@
   @apply flex w-fit flex-col flex-wrap p-2;
   --menu-active-fg: var(--color-neutral-content);
   --menu-active-bg: var(--color-neutral);
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
 
   :where(li ul) {
     @apply relative ms-4 ps-2 whitespace-nowrap;
@@ -117,7 +117,7 @@
 
 .menu-title {
   @apply text-base-content/40 px-3 py-2;
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
   font-weight: 600;
 }
 
@@ -154,7 +154,7 @@
   :where(li:not(.menu-title) > *:not(ul, details, .menu-title)),
   :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
     @apply rounded-field px-2 py-1;
-    font-size: calc(0.6875 * var(--int-font-base, 1rem));
+    font-size: calc(0.6875 * var(--font-size-basis, 1rem));
   }
 
   .menu-title {
@@ -166,7 +166,7 @@
   :where(li:not(.menu-title) > *:not(ul, details, .menu-title)),
   :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
     @apply rounded-field px-2.5 py-1;
-    font-size: calc(0.75 * var(--int-font-base, 1rem));
+    font-size: calc(0.75 * var(--font-size-basis, 1rem));
   }
 
   .menu-title {
@@ -178,7 +178,7 @@
   :where(li:not(.menu-title) > *:not(ul, details, .menu-title)),
   :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
     @apply rounded-field px-3 py-1.5;
-    font-size: calc(0.875 * var(--int-font-base, 1rem));
+    font-size: calc(0.875 * var(--font-size-basis, 1rem));
   }
 
   .menu-title {
@@ -190,7 +190,7 @@
   :where(li:not(.menu-title) > *:not(ul, details, .menu-title)),
   :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
     @apply rounded-field px-4 py-1.5;
-    font-size: calc(1.125 * var(--int-font-base, 1rem));
+    font-size: calc(1.125 * var(--font-size-basis, 1rem));
   }
 
   .menu-title {
@@ -202,7 +202,7 @@
   :where(li:not(.menu-title) > *:not(ul, details, .menu-title)),
   :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
     @apply rounded-field px-5 py-1.5;
-    font-size: calc(1.375 * var(--int-font-base, 1rem));
+    font-size: calc(1.375 * var(--font-size-basis, 1rem));
   }
 
   .menu-title {

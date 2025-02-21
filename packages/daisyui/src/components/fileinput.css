@@ -5,7 +5,7 @@
   width: clamp(calc(3 * var(--rem-basis, 1rem)), calc(20 * var(--rem-basis, 1rem)), 100%);
   height: var(--size);
   padding-inline-end: calc(0.75 * var(--rem-basis, 1rem));
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
   line-height: 2;
   border-start-start-radius: var(--join-ss, var(--radius-field));
   border-start-end-radius: var(--join-se, var(--radius-field));
@@ -22,7 +22,7 @@
     height: calc(100% + var(--border) * 2);
     margin-block: calc(var(--border) * -1);
     margin-inline-start: calc(var(--border) * -1);
-    font-size: calc(0.875 * var(--int-font-base, 1rem));
+    font-size: calc(0.875 * var(--font-size-basis, 1rem));
     color: var(--btn-fg);
     border-width: var(--border);
     border-style: solid;
@@ -190,46 +190,46 @@
 }
 .file-input-xs {
   --size: calc(var(--size-field, 0.25rem) * 6);
-  font-size: calc(0.6875 * var(--int-font-base, 1rem));
-  line-height: calc(1 * var(--int-font-base, 1rem));
+  font-size: calc(0.6875 * var(--font-size-basis, 1rem));
+  line-height: calc(1 * var(--font-size-basis, 1rem));
   &::file-selector-button {
-    font-size: calc(0.6875 * var(--int-font-base, 1rem));
+    font-size: calc(0.6875 * var(--font-size-basis, 1rem));
   }
 }
 
 .file-input-sm {
   --size: calc(var(--size-field, 0.25rem) * 8);
-  font-size: calc(0.75 * var(--int-font-base, 1rem));
-  line-height: calc(1.5 * var(--int-font-base, 1rem));
+  font-size: calc(0.75 * var(--font-size-basis, 1rem));
+  line-height: calc(1.5 * var(--font-size-basis, 1rem));
   &::file-selector-button {
-    font-size: calc(0.75 * var(--int-font-base, 1rem));
+    font-size: calc(0.75 * var(--font-size-basis, 1rem));
   }
 }
 
 .file-input-md {
   --size: calc(var(--size-field, 0.25rem) * 10);
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
   line-height: 2;
   &::file-selector-button {
-    font-size: calc(0.875 * var(--int-font-base, 1rem));
+    font-size: calc(0.875 * var(--font-size-basis, 1rem));
   }
 }
 
 .file-input-lg {
   --size: calc(var(--size-field, 0.25rem) * 12);
-  font-size: calc(1.125 * var(--int-font-base, 1rem));
-  line-height: calc(2.5 * var(--int-font-base, 1rem));
+  font-size: calc(1.125 * var(--font-size-basis, 1rem));
+  line-height: calc(2.5 * var(--font-size-basis, 1rem));
   &::file-selector-button {
-    font-size: calc(1.125 * var(--int-font-base, 1rem));
+    font-size: calc(1.125 * var(--font-size-basis, 1rem));
   }
 }
 
 .file-input-xl {
   @apply pe-6;
   --size: calc(var(--size-field, 0.25rem) * 14);
-  font-size: calc(1.125 * var(--int-font-base, 1rem));
-  line-height: calc(3 * var(--int-font-base, 1rem));
+  font-size: calc(1.125 * var(--font-size-basis, 1rem));
+  line-height: calc(3 * var(--font-size-basis, 1rem));
   &::file-selector-button {
-    font-size: calc(1.375 * var(--int-font-base, 1rem));
+    font-size: calc(1.375 * var(--font-size-basis, 1rem));
   }
 }

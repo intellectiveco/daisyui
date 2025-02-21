@@ -4,7 +4,7 @@
   @apply bg-base-100 inline-flex shrink appearance-none items-center gap-2 px-3 align-middle whitespace-nowrap;
   width: clamp(calc(3 * var(--rem-basis, 1rem)), calc(20 * var(--rem-basis, 1rem)), 100%);
   height: var(--size);
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
   border-start-start-radius: var(--join-ss, var(--radius-field));
   border-start-end-radius: var(--join-se, var(--radius-field));
   border-end-start-radius: var(--join-es, var(--radius-field));
@@ -142,7 +142,7 @@
 
 .input-xs {
   --size: calc(var(--size-field, 0.25rem) * 6);
-  font-size: calc(0.6875 * var(--int-font-base, 1rem));
+  font-size: calc(0.6875 * var(--font-size-basis, 1rem));
 
   &[type="number"] {
     &::-webkit-inner-spin-button {
@@ -153,7 +153,7 @@
 
 .input-sm {
   --size: calc(var(--size-field, 0.25rem) * 8);
-  font-size: calc(0.75 * var(--int-font-base, 1rem));
+  font-size: calc(0.75 * var(--font-size-basis, 1rem));
 
   &[type="number"] {
     &::-webkit-inner-spin-button {
@@ -164,7 +164,7 @@
 
 .input-md {
   --size: calc(var(--size-field, 0.25rem) * 10);
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
 
   &[type="number"] {
     &::-webkit-inner-spin-button {
@@ -175,7 +175,7 @@
 
 .input-lg {
   --size: calc(var(--size-field, 0.25rem) * 12);
-  font-size: calc(1.125 * var(--int-font-base, 1rem));
+  font-size: calc(1.125 * var(--font-size-basis, 1rem));
 
   &[type="number"] {
     &::-webkit-inner-spin-button {
@@ -186,7 +186,7 @@
 
 .input-xl {
   --size: calc(var(--size-field, 0.25rem) * 14);
-  font-size: calc(1.375 * var(--int-font-base, 1rem));
+  font-size: calc(1.375 * var(--font-size-basis, 1rem));
 
   &[type="number"] {
     &::-webkit-inner-spin-button {

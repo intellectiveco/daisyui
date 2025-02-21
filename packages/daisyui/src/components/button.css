@@ -3,7 +3,7 @@
   padding-inline: var(--btn-p);
   color: var(--btn-fg);
   height: var(--size);
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
   font-weight: 600;
   outline-color: var(--btn-color, var(--color-base-content));
   transition-property: color, background-color, border-color, box-shadow;
@@ -215,31 +215,31 @@
 }
 
 .btn-xs {
-  font-size: calc(0.6875 * var(--int-font-base, 1rem));
+  font-size: calc(0.6875 * var(--font-size-basis, 1rem));
   --btn-p: calc(0.5 * var(--rem-basis, 1rem));
   --size: calc(var(--size-field, 0.25rem) * 6);
 }
 
 .btn-sm {
-  font-size: calc(0.75 * var(--int-font-base, 1rem));
+  font-size: calc(0.75 * var(--font-size-basis, 1rem));
   --btn-p: calc(0.75 * var(--rem-basis, 1rem));
   --size: calc(var(--size-field, 0.25rem) * 8);
 }
 
 .btn-md {
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
   --btn-p: calc(1 * var(--rem-basis, 1rem));
   --size: calc(var(--size-field, 0.25rem) * 10);
 }
 
 .btn-lg {
-  font-size: calc(1.125 * var(--int-font-base, 1rem));
+  font-size: calc(1.125 * var(--font-size-basis, 1rem));
   --btn-p: calc(1.25 * var(--rem-basis, 1rem));
   --size: calc(var(--size-field, 0.25rem) * 12);
 }
 
 .btn-xl {
-  font-size: calc(1.375 * var(--int-font-base, 1rem));
+  font-size: calc(1.375 * var(--font-size-basis, 1rem));
   --btn-p: calc(1.5 * var(--rem-basis, 1rem));
   --size: calc(var(--size-field, 0.25rem) * 14);
 }

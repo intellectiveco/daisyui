@@ -1,5 +1,5 @@
 .cally {
-  font-size: calc(0.7 * var(--int-font-base, 1rem));
+  font-size: calc(0.7 * var(--font-size-basis, 1rem));
 
   &::part(container) {
     padding: calc(0.5 * var(--rem-basis, 1rem)) calc(1 * var(--rem-basis, 1rem));
@@ -14,7 +14,7 @@
   }
   ::part(head) {
     opacity: 0.5;
-    font-size: calc(0.7 * var(--int-font-base, 1rem));
+    font-size: calc(0.7 * var(--font-size-basis, 1rem));
   }
   &::part(button) {
     border-radius: var(--radius-field);
@@ -27,7 +27,7 @@
   }
   ::part(day) {
     border-radius: var(--radius-field);
-    font-size: calc(0.7 * var(--int-font-base, 1rem));
+    font-size: calc(0.7 * var(--font-size-basis, 1rem));
   }
   ::part(button day today) {
     background: var(--color-primary);
@@ -62,7 +62,7 @@
   background-color: var(--color-base-100);
   border-radius: var(--radius-box);
   border: var(--border) solid var(--color-base-200);
-  font-size: calc(0.75 * var(--int-font-base, 1rem));
+  font-size: calc(0.75 * var(--font-size-basis, 1rem));
   display: inline-block;
   position: relative;
   overflow: clip;
@@ -188,7 +188,7 @@
   }
   .rdp-month_caption {
     height: calc(2.75 * var(--rem-basis, 1rem));
-    font-size: calc(0.75 * var(--int-font-base, 1rem));
+    font-size: calc(0.75 * var(--font-size-basis, 1rem));
     font-weight: inherit;
     place-content: center;
     display: flex;
@@ -241,7 +241,7 @@
   }
   .rdp-selected {
     font-weight: inherit;
-    font-size: calc(0.75 * var(--int-font-base, 1rem));
+    font-size: calc(0.75 * var(--font-size-basis, 1rem));
     .rdp-day_button {
       color: var(--color-base-100);
       background-color: var(--color-base-content);
@@ -304,7 +304,7 @@
 .pika-single {
   &:is(div) {
     user-select: none;
-    font-size: calc(0.75 * var(--int-font-base, 1rem));
+    font-size: calc(0.75 * var(--font-size-basis, 1rem));
     z-index: 999;
     display: inline-block;
     position: relative;

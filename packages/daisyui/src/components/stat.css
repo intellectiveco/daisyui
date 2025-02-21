@@ -18,18 +18,18 @@
 
 .stat-title {
   @apply text-base-content/60 col-start-1 whitespace-nowrap;
-  font-size: calc(0.75 * var(--int-font-base, 1rem));
+  font-size: calc(0.75 * var(--font-size-basis, 1rem));
 }
 
 .stat-value {
   @apply col-start-1 whitespace-nowrap;
-  font-size: calc(2 * var(--int-font-base, 1rem));
+  font-size: calc(2 * var(--font-size-basis, 1rem));
   font-weight: 800;
 }
 
 .stat-desc {
   @apply text-base-content/60 col-start-1 whitespace-nowrap;
-  font-size: calc(0.75 * var(--int-font-base, 1rem));
+  font-size: calc(0.75 * var(--font-size-basis, 1rem));
 }
 
 .stat-actions {

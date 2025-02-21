@@ -97,55 +97,55 @@
 .card-xs {
   .card-body {
     --card-p: calc(0.5 * var(--rem-basis, 1rem));
-    --card-fs: calc(0.6875 * var(--int-font-base, 1rem));
+    --card-fs: calc(0.6875 * var(--font-size-basis, 1rem));
   }
 
   .card-title {
-    --cardtitle-fs: calc(0.875 * var(--int-font-base, 1rem));
+    --cardtitle-fs: calc(0.875 * var(--font-size-basis, 1rem));
   }
 }
 
 .card-sm {
   .card-body {
     --card-p: calc(1 * var(--rem-basis, 1rem));
-    --card-fs: calc(0.75 * var(--int-font-base, 1rem));
+    --card-fs: calc(0.75 * var(--font-size-basis, 1rem));
   }
 
   .card-title {
-    --cardtitle-fs: calc(1 * var(--int-font-base, 1rem));
+    --cardtitle-fs: calc(1 * var(--font-size-basis, 1rem));
   }
 }
 
 .card-md {
   .card-body {
     --card-p: calc(1.5 * var(--rem-basis, 1rem));
-    --card-fs: calc(0.875 * var(--int-font-base, 1rem));
+    --card-fs: calc(0.875 * var(--font-size-basis, 1rem));
   }
 
   .card-title {
-    --cardtitle-fs: calc(1.125 * var(--int-font-base, 1rem));
+    --cardtitle-fs: calc(1.125 * var(--font-size-basis, 1rem));
   }
 }
 
 .card-lg {
   .card-body {
     --card-p: calc(2 * var(--rem-basis, 1rem));
-    --card-fs: calc(1 * var(--int-font-base, 1rem));
+    --card-fs: calc(1 * var(--font-size-basis, 1rem));
   }
 
   .card-title {
-    --cardtitle-fs: calc(1.25 * var(--int-font-base, 1rem));
+    --cardtitle-fs: calc(1.25 * var(--font-size-basis, 1rem));
   }
 }
 
 .card-xl {
   .card-body {
     --card-p: calc(2.5 * var(--rem-basis, 1rem));
-    --card-fs: calc(1.125 * var(--int-font-base, 1rem));
+    --card-fs: calc(1.125 * var(--font-size-basis, 1rem));
   }
 
   .card-title {
-    --cardtitle-fs: calc(1.375 * var(--int-font-base, 1rem));
+    --cardtitle-fs: calc(1.375 * var(--font-size-basis, 1rem));
   }
 }
 

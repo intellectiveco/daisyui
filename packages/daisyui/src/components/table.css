@@ -1,5 +1,5 @@
 .table {
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
   @apply rounded-box relative w-full text-left rtl:text-right;
 
   tr.row-hover {
@@ -15,7 +15,7 @@
 
   :where(thead, tfoot) {
     @apply text-base-content/60 whitespace-nowrap;
-    font-size: calc(0.875 * var(--int-font-base, 1rem));
+    font-size: calc(0.875 * var(--font-size-basis, 1rem));
     font-weight: 600;
   }
 
@@ -63,7 +63,7 @@
 
 .table-xs {
   :not(thead, tfoot) tr {
-    font-size: calc(0.6875 * var(--int-font-base, 1rem));
+    font-size: calc(0.6875 * var(--font-size-basis, 1rem));
   }
 
   :where(th, td) {
@@ -73,7 +73,7 @@
 
 .table-sm {
   :not(thead, tfoot) tr {
-    font-size: calc(0.75 * var(--int-font-base, 1rem));
+    font-size: calc(0.75 * var(--font-size-basis, 1rem));
   }
 
   :where(th, td) {
@@ -83,7 +83,7 @@
 
 .table-md {
   :not(thead, tfoot) tr {
-    font-size: calc(0.875 * var(--int-font-base, 1rem));
+    font-size: calc(0.875 * var(--font-size-basis, 1rem));
   }
 
   :where(th, td) {
@@ -93,7 +93,7 @@
 
 .table-lg {
   :not(thead, tfoot) tr {
-    font-size: calc(1.125 * var(--int-font-base, 1rem));
+    font-size: calc(1.125 * var(--font-size-basis, 1rem));
   }
 
   :where(th, td) {
@@ -103,7 +103,7 @@
 
 .table-xl {
   :not(thead, tfoot) tr {
-    font-size: calc(1.375 * var(--int-font-base, 1rem));
+    font-size: calc(1.375 * var(--font-size-basis, 1rem));
   }
 
   :where(th, td) {

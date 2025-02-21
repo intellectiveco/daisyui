@@ -59,12 +59,12 @@
 
 .chat-header {
   @apply row-start-1 flex gap-1;
-  font-size: calc(0.6875 * var(--int-font-base, 1rem));
+  font-size: calc(0.6875 * var(--font-size-basis, 1rem));
 }
 
 .chat-footer {
   @apply row-start-3 flex gap-1;
-  font-size: calc(0.6875 * var(--int-font-base, 1rem));
+  font-size: calc(0.6875 * var(--font-size-basis, 1rem));
 }
 
 .chat-start {

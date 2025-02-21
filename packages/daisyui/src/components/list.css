@@ -1,6 +1,6 @@
 .list {
   @apply flex flex-col;
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
   :where(.list-row) {
     --list-grid-cols: minmax(0, auto) 1fr;
     @apply rounded-box relative grid grid-flow-col gap-4 p-4;

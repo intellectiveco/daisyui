@@ -4,7 +4,7 @@
   width: clamp(calc(3 * var(--rem-basis, 1rem)), calc(20 * var(--rem-basis, 1rem)), 100%);
   padding-inline-start: calc(0.75 * var(--rem-basis, 1rem));
   padding-inline-end: calc(0.75 * var(--rem-basis, 1rem));
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
   border-color: var(--input-color);
   box-shadow:
     0 1px color-mix(in oklab, var(--input-color) calc(var(--depth) * 10%), #0000) inset,
@@ -118,21 +118,21 @@
 }
 
 .textarea-xs {
-  font-size: calc(0.6875 * var(--int-font-base, 1rem));
+  font-size: calc(0.6875 * var(--font-size-basis, 1rem));
 }
 
 .textarea-sm {
-  font-size: calc(0.75 * var(--int-font-base, 1rem));
+  font-size: calc(0.75 * var(--font-size-basis, 1rem));
 }
 
 .textarea-md {
-  font-size: calc(0.875 * var(--int-font-base, 1rem));
+  font-size: calc(0.875 * var(--font-size-basis, 1rem));
 }
 
 .textarea-lg {
-  font-size: calc(1.125 * var(--int-font-base, 1rem));
+  font-size: calc(1.125 * var(--font-size-basis, 1rem));
 }
 
 .textarea-xl {
-  font-size: calc(1.375 * var(--int-font-base, 1rem));
+  font-size: calc(1.375 * var(--font-size-basis, 1rem));
 }
