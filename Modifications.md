@@ -10,7 +10,7 @@
 
    - **Description**: Adjust font-related properties to be dynamically calculated based on the `--int-font-base` variable.
    - **Regex Pattern**: `(font-size|line-height|-fs):\s*([0-9.]+)rem;`
-   - **Replacement**: Transform the pattern to `$1: calc($2 * var(--int-font-base,1rem));`
+   - **Replacement**: Transform the pattern to `$1: calc($2 * var(--font-size-basis,1rem));`
 
 3. **Get All REM Values Not in Variables and Formulas**
 
