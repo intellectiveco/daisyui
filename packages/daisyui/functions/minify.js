@@ -14,9 +14,9 @@ export const minify = async (filePath) => {
       minify: true,
     })
     const packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"))
+    const buildTimestamp = new Date().toLocaleString("en-US", { timeZoneName: "short" })
     const modifiedCode =
-      `${atob("Lyoh")} ${decodeURIComponent("%F0%9F%8C%BC")} ${atob("ZGFpc3lVSQ==")} ${packageJson.version} ${atob("LSBNSVQgTGljZW5zZSAqLw==")} ` +
-      code
+      `/* Build Timestamp: ${buildTimestamp} Version: ${packageJson.version} */\n` + code
     await fs.promises.writeFile(filePath, modifiedCode)
   } catch (error) {
     throw new Error(`${filePath}:${error?.loc?.line}: ${error.message}`)
