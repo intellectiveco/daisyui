@@ -150,25 +150,25 @@ These components automatically set the correct background color, text color, bor
 <Translate text="You can also use color names in utility classes just like Tailwind's original color names." />
 <Translate text="These are utility classes that can be used with a color name:" />
 
-| CSS Class                  |                                    |
-|----------------------------|------------------------------------|
-| `bg-{COLOR_NAME}`          | Also available in daisyUI CDN file |
-| `text-{COLOR_NAME}`        | Also available in daisyUI CDN file |
-| `border-{COLOR_NAME}`      | Also available in daisyUI CDN file |
-| `from-{COLOR_NAME}`        |                                    |
-| `via-{COLOR_NAME}`         |                                    |
-| `to-{COLOR_NAME}`          |                                    |
-| `ring-{COLOR_NAME}`        |                                    |
-| `fill-{COLOR_NAME}`        |                                    |
-| `caret-{COLOR_NAME}`       |                                    |
-| `stroke-{COLOR_NAME}`      |                                    |
-| `divide-{COLOR_NAME}`      |                                    |
-| `accent-{COLOR_NAME}`      |                                    |
-| `shadow-{COLOR_NAME}`      |                                    |
-| `outline-{COLOR_NAME}`     |                                    |
-| `decoration-{COLOR_NAME}`  |                                    |
-| `placeholder-{COLOR_NAME}` |                                    |
-| `ring-offset-{COLOR_NAME}` |                                    |
+| CSS Class                  |                                                                                                                                   |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `bg-{COLOR_NAME}`          | Also available on CDN [/colors/properties.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties.css)                   |
+| `text-{COLOR_NAME}`        | Also available on CDN [/colors/properties.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties.css)                   |
+| `border-{COLOR_NAME}`      | Also available on CDN [/colors/properties.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties.css)                   |
+| `from-{COLOR_NAME}`        | Also available on CDN [/colors/properties-extended.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties-extended.css) |
+| `via-{COLOR_NAME}`         | Also available on CDN [/colors/properties-extended.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties-extended.css) |
+| `to-{COLOR_NAME}`          | Also available on CDN [/colors/properties-extended.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties-extended.css) |
+| `ring-{COLOR_NAME}`        | Also available on CDN [/colors/properties-extended.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties-extended.css) |
+| `fill-{COLOR_NAME}`        | Also available on CDN [/colors/properties-extended.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties-extended.css) |
+| `stroke-{COLOR_NAME}`      | Also available on CDN [/colors/properties-extended.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties-extended.css) |
+| `shadow-{COLOR_NAME}`      | Also available on CDN [/colors/properties-extended.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties-extended.css) |
+| `outline-{COLOR_NAME}`     | Also available on CDN [/colors/properties-extended.css](https://cdn.jsdelivr.net/npm/daisyui@latest/colors/properties-extended.css) |
+| `divide-{COLOR_NAME}`      |                                                                                                                                   |
+| `accent-{COLOR_NAME}`      |                                                                                                                                   |
+| `caret-{COLOR_NAME}`       |                                                                                                                                   |
+| `decoration-{COLOR_NAME}`  |                                                                                                                                   |
+| `placeholder-{COLOR_NAME}` |                                                                                                                                   |
+| `ring-offset-{COLOR_NAME}` |                                                                                                                                   |
 
 
 So you can use `bg-primary`, `border-secondary`, etc. Read more about [daisyUI color utility classes](/docs/utilities).
@@ -180,11 +180,11 @@ So you can use `bg-primary`, `border-secondary`, etc. Read more about [daisyUI c
 <div class="grid md:grid-cols-2 gap-10">
   <div class="relative bg-base-100 p-10 border border-base-content/10 rounded-box" data-theme="nord">
     <div class="badge badge-xs absolute end-2 top-2">nord theme</div>
-    <div class="text-base-content">base-content text color</div>
+    <div class="text-base-content">text-base-content</div>
   </div>
   <div class="relative bg-base-100 p-10 border border-base-content/10 rounded-box" data-theme="dracula">
     <div class="badge badge-xs absolute end-2 top-2">dracula theme</div>
-    <div class="text-base-content">base-content text color</div>
+    <div class="text-base-content">text-base-content</div>
   </div>
 </div>
 
@@ -193,17 +193,17 @@ Sometimes we need a muted text. something with less contrast. The best way to do
 <div class="grid md:grid-cols-2 gap-10">
   <div class="relative bg-base-100 p-10 border border-base-content/10 rounded-box" data-theme="nord">
     <div class="badge badge-xs absolute end-2 top-2">nord theme</div>
-    <div class="text-base-content">base-content</div>
-    <div class="text-base-content/70">base-content/70</div>
-    <div class="text-base-content/50">base-content/50</div>
-    <div class="text-base-content/30">base-content/30</div>
+    <div class="text-base-content">text-base-content</div>
+    <div class="text-base-content/70">text-base-content/70</div>
+    <div class="text-base-content/50">text-base-content/50</div>
+    <div class="text-base-content/30">text-base-content/30</div>
   </div>
   <div class="relative bg-base-100 p-10 border border-base-content/10 rounded-box" data-theme="dracula">
     <div class="badge badge-xs absolute end-2 top-2">dracula theme</div>
-    <div class="text-base-content">base-content</div>
-    <div class="text-base-content/70">base-content/70</div>
-    <div class="text-base-content/50">base-content/50</div>
-    <div class="text-base-content/30">base-content/30</div>
+    <div class="text-base-content">text-base-content</div>
+    <div class="text-base-content/70">text-base-content/70</div>
+    <div class="text-base-content/50">text-base-content/50</div>
+    <div class="text-base-content/30">text-base-content/30</div>
   </div>
 </div>
 
@@ -213,12 +213,12 @@ You can use it with any opacity value, you can use it for any color. For example
 <div class="grid md:grid-cols-2 gap-10">
   <div class="relative bg-primary p-10 border border-primary-content/10 rounded-box" data-theme="nord">
     <div class="badge badge-xs absolute end-2 top-2">nord theme</div>
-    <div class="text-primary-content">primary-content</div>
-    <div class="text-primary-content/50">primary-content/50</div>
+    <div class="text-primary-content">text-primary-content</div>
+    <div class="text-primary-content/50">text-primary-content/50</div>
   </div>
   <div class="relative bg-primary p-10 border border-primary-content/10 rounded-box" data-theme="dracula">
     <div class="badge badge-xs absolute end-2 top-2">dracula theme</div>
-    <div class="text-primary-content">primary-content</div>
-    <div class="text-primary-content/50">primary-content/50</div>
+    <div class="text-primary-content">text-primary-content</div>
+    <div class="text-primary-content/50">text-primary-content/50</div>
   </div>
 </div>

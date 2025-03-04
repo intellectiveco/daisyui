@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
-## 5.0.0 (Beta)
+## 5.0.0
 
-> This is the detailed list of changes per component. Most of these changes won't affect your project, so if you want to learn about the breaking changes only, [check out the daisyUI 5 release notes](/docs/v5-beta/)
+> This is the detailed list of changes per component. Most of these changes won't affect your project, so if you want to learn about the breaking changes only, [check out the daisyUI 5 release notes](/docs/v5/)
 
 ### Alert
 
@@ -115,6 +115,7 @@ To be clear, `mockup-phone` is not removed. It just doesn't need the `artboard` 
 - Adjusted padding.
 - Improved disabled state styling.
 - **Breaking Change:** Default height reduced; customizable via `--size-field`.
+- checked button (checkbox, radio) now has outline insteaed of forced primary color. This allows customization like `checked:btn-secondary`
 
 ### Card
 
@@ -572,10 +573,42 @@ I suggest using the newly added class names for `fieldset` and `legend` elements
 
 </div>
 
+<div class="before-after">
+
+```html:before
+<label class="form-control w-full max-w-xs">
+  <div class="label">
+    <span class="label-text">What is your name?</span>
+    <span class="label-text-alt">Top Right label</span>
+  </div>
+  <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+  <div class="label">
+    <span class="label-text-alt">Bottom Left label</span>
+    <span class="label-text-alt">Bottom Right label</span>
+  </div>
+</label>
+```
+
+```html:after
+<fieldset class="fieldset max-w-xs">
+  <label class="label flex justify-between" for="name">
+    <span>What is your name?</span>
+    <span>Top Right label</span>
+  </label>
+  <input id="name" class="input" placeholder="Name" />
+  <label class="label flex justify-between" for="name">
+    <span>Bottom Left label</span>
+    <span>Bottom Right label</span>
+  </label>
+</fieldset>
+```
+
+</div>
+
 #### 🗑️ Remove btn-group and input-group
 
 btn-group, input-group were deprecated a year ago and now finally removed.  
-If You've been using btn-group or input-group, you can use `join` instead
+If you've been using btn-group or input-group, you can use `join` instead
 
 <div class="before-after">
 

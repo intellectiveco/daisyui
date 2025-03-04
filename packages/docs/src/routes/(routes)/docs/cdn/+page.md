@@ -31,7 +31,7 @@ desc: How to use daisyUI from a CDN?
 
   let combinedUrl = derived(selectedUrls, ($selectedUrls) => {
     return $selectedUrls.length
-      ? `https://cdn.jsdelivr.net/combine/${$selectedUrls.map((url) => `npm/daisyui@beta/${url.path}`).join(",")}`
+      ? `https://cdn.jsdelivr.net/combine/${$selectedUrls.map((url) => `npm/daisyui@latest/${url.path}`).join(",")}`
       : "";
   });
 
@@ -139,7 +139,7 @@ desc: How to use daisyUI from a CDN?
       <p class="block text-xs mx-1 mb-1 tracking-wider">Combined and compress into one CSS file, hosted on the fastest CDN</p>
       {#each data.groupedFiles as group}
         <h4 class="block text-xs mt-4 mx-1 mb-1 font-semibold tracking-wider opacity-40">{group.name}</h4>
-        <div class="flex gap-1 flex-wrap">
+        <div class="flex gap-y-3 gap-x-2 flex-wrap">
           {#each group.files as file}
             <input class="btn btn-xs rounded-full" aria-label={file.name} type="checkbox" onchange={() => toggleUrl(file)} checked={file.checked} />
           {/each}

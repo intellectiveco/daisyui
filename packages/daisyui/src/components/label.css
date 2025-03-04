@@ -3,11 +3,8 @@
   &:has(input) {
     @apply cursor-pointer;
   }
-}
-.input,
-.select {
-  .label {
-    @apply flex h-[calc(100%-0.5rem)] items-center px-3;
+  &:is(.input > *, .select > *) {
+    @apply flex h-[calc(100%-0.5rem)] items-center px-3 whitespace-nowrap;
     font-size: inherit;
     &:first-child {
       @apply -ms-3 me-3;
@@ -24,11 +21,24 @@
   input {
     @apply block;
     &::placeholder {
-      @apply text-transparent;
+      transition:
+        top 0.1s ease-out,
+        translate 0.1s ease-out,
+        scale 0.1s ease-out,
+        opacity 0.1s ease-out;
+    }
+  }
+  textarea {
+    &::placeholder {
+      transition:
+        top 0.1s ease-out,
+        translate 0.1s ease-out,
+        scale 0.1s ease-out,
+        opacity 0.1s ease-out;
     }
   }
   > span {
-    @apply bg-base-100 absolute start-3 z-1 px-1 opacity-40;
+    @apply bg-base-100 absolute start-3 z-1 px-1 opacity-0;
     top: calc(var(--size-field, 0.25rem) * 10 / 2);
     line-height: 1;
     border-radius: 2px;
@@ -41,7 +51,14 @@
       opacity 0.1s ease-out;
   }
   &:focus-within,
-  &:not(:has(input:placeholder-shown)) {
+  &:not(:has(input:placeholder-shown, textarea:placeholder-shown)) {
+    ::placeholder {
+      @apply opacity-0;
+      top: 0;
+      translate: -12.5% calc(-50% - 0.125em);
+      scale: 0.75;
+      pointer-events: auto;
+    }
     > span {
       @apply opacity-100;
       top: 0;
